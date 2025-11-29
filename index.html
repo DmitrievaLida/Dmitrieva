@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<div class="Mcontainer"><!-- Открываем глобальный контейнер -->
+<div class="container1"><!-- Открываем первый контейнер -->
+<div class="container1_1"><!-- Открываем контейнер 1.1-->
+<img src="img/logo.png" width="97" height="30"/>
+<div style="font-family: 'Times New Roman'; font-size: 22px; color: white;">
+С помощью нас<br>вы сможете создать то, о чём</style></div> 
+<div style="font-family: 'Times New Roman'; font-size: 26px; color: white;" class="animate__animated animate__bounce">
+ЖЕЛАЕТЕ!</style></div> 
+<div style="font-family: 'Times New Roman'; font-size: 14px; color: white;">
+Наши возможности + опыт позволят Вам достичь<br>
+огромного успеха. Мы верим в вас! И знаем это на<br>
+все 100%. Вас не остановить!</style></div> 
+<button style="background-color: yellow; color: black;font-size: 16px;width: 190px;height: 35px; border-style: none;" class="animate__animated animate__backInLeft" >Узнать больше...</style></button>
+</div><!-- Закрываем контейнер 1.1-->
+<div class="container1_2"><!-- Открываем контейнер 1.2-->
+<img src="img/header-img.png" width=auto height=70% class="animated-image1"/>
+</div><!-- Закрываем контейнер 1.2-->
+</div><!-- Закрываем первый контейнер -->
+<div class="container2"><!-- Открываем второй контейнер -->
+<div class="container2_1"><!-- Открываем контейнер 2.1-->
+<div style="font-family: 'Times New Roman'; font-size: 22px; color: black;">
+<b>Что Вам необходимо?</b></style></div> 
+</div><!-- Закрываем контейнер 2.1-->
+<div class="container2_2"><!-- Открываем контейнер 2.2-->
+<div class="container2_3"><!-- Открываем контейнер 2.3-->
+<div class="image-container"><img src="img/f3.png" class="animated-image3"></div>
+<p style="font-family: 'Times New Roman'; font-size: 16px;text-align: center"><b>Первый блок</b><br>Lorem ipsum dolor sit amet consectetur<br>adipisci velit</style></p>
+</div><!-- Закрываем контейнер 2.3-->
+<div class="container2_3"><!-- Открываем контейнер 2.3-->
+<div class="image-container"><img src="img/f4.png" class="animated-image4"></div>  
+<p style="font-family: 'Times New Roman'; font-size: 16px;text-align: center"><b>Второй блок</b><br>Lorem ipsum dolor sit amet consectetur<br>adipisci velit</style></p>
+</div><!-- Закрываем контейнер 2.3-->
+<div class="container2_3"><!-- Открываем контейнер 2.3-->
+<img src="img/f5.png" width=41px height=40px class="animated-image2"/>
+<p style="font-family: 'Times New Roman'; font-size: 16px;text-align: center"><b>Третий блок</b><br>Lorem ipsum dolor sit amet consectetur<br>adipisci velit</style></p>
+</div><!-- Закрываем контейнер 2.3-->
+</div><!-- Закрываем контейнер 2.2-->
+</div><!-- Закрываем второй контейнер -->
+
+<div class="container3"><!-- Открываем контейнер под форму регистрации на сайте-->
+    <section class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text" id="Str1" onclick="ChColor();">Форма регистрации на сайте</div>
+            </div>
+        </div>
+ <form id="form" action="#">
+ <div class="row">
+ <div class="col-md-8 orderInfo">
+ <h5>Введите следующие данные:</h5>
+<!--Ввод имени пользователя-->
+ <div class="row">
+    <div class="col-md-4" id="Str2" onclick="ChBackgr();">Имя пользователя:</div>
+    <div class="col-md-4"><input class="form-control" id="UserName" type="text" onblur="checkUserName();" required /></div>
+    <div class="col-md-4"><span id="Name_Check"></span></div>
+ </div>
+<!--Ввод пользовательского пароля-->
+ <div class="row">
+    <div class="col-md-4">Пароль:</div>
+    <div class="col-md-4"><input class="form-control" id="Pswr" type="text" onblur="checkPswr();" required /></div>
+    <div class="col-md-4"><span id="Pswr_Check"></span></div>
+ </div>
+<!--Ввод номера телефона пользователя-->                   
+ <div class="row">
+    <div class="col-md-4">Номер телефона:</div>
+    <div class="col-md-4"><input class="form-control" id="Phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxхx" required /></div>
+    <div class="col-md-4"><span id="Phone_Check"></span></div>
+ </div>
+<!--Ввод адреса электронной почты пользователя-->                   
+ <div class="row">
+    <div class="col-md-4">Электронная почта:</div>
+    <div class="col-md-4"><input class="form-control" id="EMail" type="text" onblur="checkEMail();" required/></div>
+    <div class="col-md-4"><span id="EMail_Check"></span></div>
+ </div>
+<!--Отправка данных-->    
+ <div class="row">
+    <div class="col-md-12 order"><span id="sendOrder" onclick="outputData();">Отправить данные</span></div>
+ </div>
+ </div>
+ <div class="col-md-4 orderSummary">
+    <div class="col-md-12">
+        <h5>Проверка введённых данных:</h5> <span id="summary"></span>
+    </div>
+ </div>
+ </div>
+  </form> 
+</div><!-- Закрываем контейнер под форму регистрации на сайте-->
+
+<div class="container33"><!-- Открываем контейнер под форму заказа обратного звонка-->
+   <div style="font-family: 'Times New Roman'; font-size: 22px; color: black;">
+   <b>Форма заказа обратного звонка</b></style></div> 
+   <input type="text" style="width: 250px;height: 30px;" id="username" name="username" placeholder=" Имя" minlength="5" maxlength="20" required>
+   <input type="email" style="width: 250px;height: 30px;" id="email" name="email" placeholder=" Введите свой E-mail" required>
+   <input type="tel" style="width: 250px;height: 30px;" id="Telef" name="Telef" placeholder=" Телефон в формате ххх-ххх-хххх" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+   <input type="text" style="width: 250px;height: 30px;" id="inter" name="inter" placeholder=" Какие темы Вас интресуют?" required>
+   <button style="background-color: yellow; color: black;font-size: 14px;width: 250px;height: 30px; border-style: none;">Отправить вопрос!</button>
+</div><!-- Закрываем контейнер под форму заказа обратного звонка-->
+
+<div class="container4"><!-- Открываем четвёртый контейнер -->
+<div style="font-family: 'Times New Roman'; font-size: 14px; color: white;">
+© Всё на этом сайте защищено</style></div> 
+</div><!-- Закрываем четвёртый контейнер -->
+</div><!-- Закрываем глобальный контейнер -->  
+
+<!--Скрипты проверки-->  
+    <script src="js/MyScript.js"></script>
+</body>
+</html>
